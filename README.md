@@ -4,6 +4,9 @@ group-music-queue
 This was started as a fun project.  Our initial goal was to create a network resource that will play a shared music queue 
 that is populated by one or more network clients.
 
+To install necessary dependencies, run the following command:
+    
+	npm install
 
 Seems like we will have multiple components:
 
@@ -21,3 +24,4 @@ Seems like we will have multiple components:
  - client 
  	- maybe parse itunes library file
  	- submit local files to the shared queue (path and authentication information passed to server?)   
+
