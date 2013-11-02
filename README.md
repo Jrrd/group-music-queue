@@ -12,10 +12,11 @@ Seems like we will have multiple components:
  	- provides audio device to play music (local sounds to start -- future: allow connection to airplay devices)
  	- may be able to parse all available songs on the network by sharing itunes library files
  
- - generic queue
- 
  - server webapp
  	- standard media controls
+ 	- configure audio output
+ 
+ - generic queue module
  
  - client 
  	- maybe parse itunes library file
