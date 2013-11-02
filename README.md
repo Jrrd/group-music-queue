@@ -1,7 +1,7 @@
 group-music-queue
 =================
 
-This was started as a fun project.  Our goal was to create a network resource that will play a shared music queue 
+This was started as a fun project.  Our initial goal was to create a network resource that will play a shared music queue 
 that is populated by one or more network clients.
 
 
