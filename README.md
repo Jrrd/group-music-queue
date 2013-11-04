@@ -18,8 +18,7 @@ Seems like we will have multiple components:
  - server webapp
  	- standard media controls
  	- configure audio output
- 
- - generic queue module
+ 	- generic queue module
  
  - client 
  	- maybe parse itunes library file
