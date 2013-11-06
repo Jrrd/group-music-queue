@@ -12,9 +12,12 @@
   "dependencies": {
     "express": "3.0.0rc3",
     "jade": "*",
-    "underscore": "*"
+    "lame": "*",
+    "underscore": "*",
+    "speaker": "*"
   },
   "devDependencies": { 
   	"qunit": "*" 
   }
+  "engine": "node >= 0.10.1"
 }
