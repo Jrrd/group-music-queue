@@ -1,9 +1,8 @@
 
-/*
+console.log('');
+console.log('Welcome to the Music Queue Server.');
+console.log('');
 
-TODO:
 
-Here we will have to start a queue and create a LocalQueuePlayer to read the queue and 
-kick off requests to connected clients
-
-*/
+// kick off client app
+require('./lib/server/ServerApp');
