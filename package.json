@@ -14,7 +14,9 @@
     "jade": "*",
     "lame": "*",
     "underscore": "*",
-    "speaker": "*"
+    "speaker": "*",
+	"file": "*",
+	"musicmetadata" : "*"
   },
   "devDependencies": { 
   	"qunit": "*" 
