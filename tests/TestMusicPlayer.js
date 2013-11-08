@@ -1,5 +1,6 @@
 var http = require('http'),
-	MusicPlayer = require('../lib/server/MusicPlayer.js');
+	querystring = require('querystring'),
+	MusicPlayer = require('../lib/server/lib/MusicPlayer.js');
 
 var mp = new MusicPlayer();
 
@@ -37,5 +38,37 @@ function testPlayHttpStream() {
 		console.log("Got error: " + e.message);
 	});
 }
+// testPlayHttpStream();
 
-testPlayHttpStream();
+function testAddingToQueue() {
+	
+	var postData = querystring.stringify({
+			client : 'localhost',
+			port : 2500,
+			filepath : '/Users/jarrod/Music/iTunes/iTunes Music/AC_DC/Back In Black/01 Hells Bells.mp3'
+			// filepath : '/git-personal/group-music-queue/tests/sample.mp3'
+		}),
+		options = {
+			host : 'localhost',
+			port : '3800',
+			method : 'POST',
+			path : '/add',
+			headers: {
+				// 'Content-Type': 'application/x-www-form-urlencoded',
+				// 'Content-Length': postData.length
+			}
+		};
+	
+	var req = http.request(options, function(res) {
+		if (res.statusCode === 204) {
+			console.log('Successful addition to the queue');
+		}
+	}).on('error', function() {
+		console.log('Bad Request.');
+	});
+	
+	console.log('sending: ' + postData);
+	req.end(postData);
+	
+}
+testAddingToQueue();
