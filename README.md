@@ -34,6 +34,7 @@ Indexing takes place on each client producing a JSON file in the following forma
 			clientID : <client identifier>,
 			files : [
 				{
+					songID : <song identifier>,
 					path : <path to music file>,
 					metadata : 
 					{
