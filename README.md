@@ -39,25 +39,23 @@ Indexing
 Indexing takes place on each client producing a JSON file in the following format:
 
 	{
-		indexFile : {
-			clientID : <client identifier>,
-			files : [
+		clientid : <client identifier>,
+		songs : [
+			{
+				id : <song identifier>,
+				path : <path to music file>,
+				metadata : 
 				{
-					songID : <song identifier>,
-					path : <path to music file>,
-					metadata : 
-					{
-						artist : ['Spor'],
-						album : 'Nightlife, Vol 5.',
-						albumartist : [ 'Andy C', 'Spor' ],
-						title : 'Stronger',
-						year : '2010',
-						track : { no : 1, of : 44 },
-						disk : { no : 1, of : 2 },
-						picture : [ { format : 'jpg', data : <Buffer> } ]
-					}
-				},
-				...
-			]
-		}
+					artist : ['Spor'],
+					album : 'Nightlife, Vol 5.',
+					albumartist : [ 'Andy C', 'Spor' ],
+					title : 'Stronger',
+					year : '2010',
+					track : { no : 1, of : 44 },
+					disk : { no : 1, of : 2 },
+					picture : [ { format : 'jpg', data : <Buffer> } ]
+				}
+			},
+			...
+		]
 	}
