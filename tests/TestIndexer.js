@@ -3,5 +3,15 @@ var Indexer = require('../lib/shared/utils/Indexer');
 var indexer = new Indexer("frank");
 
 module.exports = { 
-	//TODO : ADD TESTS... possible unit testing
- };
+	
+	indexFileCreateTest : function(){
+		indexer.createFile("./top", ".");
+	},	
+
+	indexFileUpdateTest : function(){
+		indexer.updateFile(".", "./song-index.json")
+	}
+
+};
+
+module.exports.indexFileCreateTest();
