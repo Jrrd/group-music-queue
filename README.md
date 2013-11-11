@@ -10,7 +10,7 @@ To install necessary dependencies, run the following command:
 	npm install
 
 
-To start the server, first look at the install wiki page and then run the following command
+To start the server, first look at the [install wiki page](https://github.com/Jrrd/group-music-queue/wiki/Server-Install-and-Additional-Requirements) and then run the following command
 
 	node ./launch-server.js
 
