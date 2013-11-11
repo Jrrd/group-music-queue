@@ -1,22 +1,32 @@
 {
   "name": "group-music-queue",
+  "description": "The goal of this project was to create a network resource that will play a shared music queue that is populated by one or more network clients",
+  "author": "Jarrod Whelan <jarrod.whelan+github@gmail.com>",
+  "contributors": [
+    {
+      "name": "Jarrod Whelan",
+      "email": "jarrod.whelan+github@gmail.com"
+    },
+    {
+      "name": "Frank Hanner",
+      "email": "franklin.hanner@gmail.com"
+    }
+  ],
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-    "start": "node app"
-  },
   "directories":{
   	"lib":"./lib",
   	"bin":"./bin"
   },
   "dependencies": {
     "express": "3.0.0rc3",
+	"file": "*",
+	"fifojs": "*",
     "jade": "*",
     "lame": "*",
-    "underscore": "*",
+	"musicmetadata" : "*",
     "speaker": "*",
-	"file": "*",
-	"musicmetadata" : "*"
+    "underscore": "*"
   },
   "devDependencies": { 
   	"qunit": "*" 
