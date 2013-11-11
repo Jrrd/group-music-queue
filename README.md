@@ -10,9 +10,9 @@ To install necessary dependencies, run the following command:
 	npm install
 
 
-To start the server, run the following command
+To start the server, first look at the install wiki page and then run the following command
 
-    node ./launch-server.js
+    	node ./launch-server.js
 
 To start a client, run the following command
 
