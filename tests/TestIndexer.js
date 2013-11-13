@@ -1,4 +1,5 @@
-var Indexer = require('../lib/shared/utils/Indexer');
+var Indexer = require('../lib/shared/utils/Indexer'),
+	http = require('http');
 
 var indexer = new Indexer("frank");
 
@@ -10,6 +11,10 @@ module.exports = {
 
 	indexFileUpdateTest : function(){
 		indexer.updateFile(".", "./song-index.json")
+	},
+	
+	indexFileSendToServerTest : function() {
+		
 	}
 
 };
