@@ -1,7 +1,8 @@
+var logger = require('./lib/shared/logging/Logger').Server;
 
-console.log('');
-console.log('Welcome to the Music Queue Server.');
-console.log('');
+logger.info('');
+logger.info('Welcome to the Music Queue Server.');
+logger.info('');
 
 
 // kick off client app
