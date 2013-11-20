@@ -1,5 +1,6 @@
 
-var logger = require('./lib/shared/logging/Logger').Client
+// var logger = require('./lib/shared/logging/Logger').Client
+var logger = require('./lib/shared/logging/Logger').getLogger('client');
 
 logger.info('');
 logger.info('Welcome to the Music Queue client.');
