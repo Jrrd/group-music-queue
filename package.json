@@ -24,8 +24,8 @@
 	"fifojs": "*",
     "jade": "*",
     "lame": "*",
+	"log4js": "*",
 	"musicmetadata" : "*",
-    "speaker": "*",
     "underscore": "*"
   },
   "devDependencies": { 
