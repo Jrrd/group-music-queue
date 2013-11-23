@@ -1,1 +1,82 @@
-{"clientid":"frank","songs":[{"id":0,"path":"top/wayfaring_stranger.mp3","metadata":{}},{"id":1,"path":"top/middle/first_noel.mp3","metadata":{}},{"id":2,"path":"top/middle/bottom/blind_willie.mp3","metadata":{}}]}
+{
+    "clientid": "frank",
+    "songs": [
+        {
+            "id": 0,
+            "path": "top/wayfaring_stranger.mp3",
+            "metadata": {
+                "title": "Wayfaring Stranger",
+                "artist": [
+                    "Rob Towns"
+                ],
+                "albumartist": [],
+                "album": "",
+                "year": "2001",
+                "track": {
+                    "no": 0,
+                    "of": 0
+                },
+                "genre": [
+                    "Folk",
+                    "Folk"
+                ],
+                "disk": {
+                    "no": 0,
+                    "of": 0
+                },
+                "picture": {}
+            }
+        },
+        {
+            "id": 1,
+            "path": "top/middle/bottom/blind_willie.mp3",
+            "metadata": {
+                "title": "Blind Willie",
+                "artist": [
+                    "Rob Towns"
+                ],
+                "albumartist": [],
+                "album": "",
+                "year": "2001",
+                "track": {
+                    "no": 0,
+                    "of": 0
+                },
+                "genre": [
+                    "Folk",
+                    "Folk"
+                ],
+                "disk": {
+                    "no": 0,
+                    "of": 0
+                },
+                "picture": {}
+            }
+        },
+        {
+            "id": 2,
+            "path": "top/middle/first_noel.mp3",
+            "metadata": {
+                "title": "The First Noel",
+                "artist": [
+                    "Rob & Mary-Jo Towns"
+                ],
+                "albumartist": [],
+                "album": "TBA",
+                "year": "2000",
+                "track": {
+                    "no": 32,
+                    "of": 0
+                },
+                "genre": [
+                    "Acoustic"
+                ],
+                "disk": {
+                    "no": 0,
+                    "of": 0
+                },
+                "picture": {}
+            }
+        }
+    ]
+}
