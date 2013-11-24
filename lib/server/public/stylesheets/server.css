@@ -1,0 +1,15 @@
+
+/* SERVER UI STYLESHEET --> MAY REPLACE THIS WILL LESS STYLES DOWN THE ROAD */
+
+body {
+
+}
+
+.greeting {
+
+    display: inline-block;
+    font-size: 25px;
+
+    background-color: yellow;
+
+}
