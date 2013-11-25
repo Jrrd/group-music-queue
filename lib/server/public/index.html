@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Group Music Queue - Server</title>
+    <title>Audio Server - Group Music Queue</title>
 
     <link type="text/css" rel="stylesheet" href="stylesheets/server.css"/>
 
 </head>
 <body>
+<div class="container">
 
-Server UI
-<br>
+    <div id="player" class="player">
+        <span>[ PREVIOUS ]</span>
+        <span>[ PLAY ]</span>
+        <span>[ PAUSE ]</span>
+        <span>[ NEXT ]</span>
+    </div>
 
-<div id="greeting" class="greeting"> Watch here </div>
+    <div id="playlist" class="playlist">
+        <!-- PLAYLIST -->
+    </div>
+
+</div>
 
 
-<script data-main="scripts/ServerUI.js" src="scripts/lib/require.min.js"></script>
+<!-- APP JAVASCRIPT ========================================= -->
+
+<script data-main="scripts/server-ui-bootstrap.js" src="scripts/lib/require.min.js"></script>
+
+<!-- TEMPLATES ============================================== -->
+
+<script id="playlist-item" type="text/template">
+
+    <span class='file'>File: <%- filepath %></span>
+    &nbsp;
+    <span class='client'>Client: <%- client %></span>
+
+</script>
+
 
 </body>
 </html>

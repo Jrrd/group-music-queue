@@ -1,15 +1,51 @@
 
-/* SERVER UI STYLESHEET --> MAY REPLACE THIS WILL LESS STYLES DOWN THE ROAD */
-
 body {
-
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    min-height: 100%;
 }
 
-.greeting {
+.container {
+    margin: 0 auto;
+    min-width: 600px;
+    max-width: 1200px;
+    background-color: cornflowerblue;
+    text-align: center;
+}
 
-    display: inline-block;
-    font-size: 25px;
+.player {
+    color: whitesmoke;
+    background-color: #b00000;
+    width: 100%;
+    min-height: 100px;
+}
 
-    background-color: yellow;
+.playlist {
+    color: whitesmoke;
+    background-color: #380000;
+    padding: 20px;
+    min-height: 300px;
+    overflow-y: auto;
+}
 
+.playlist-item {
+    font-family: sans-serif, monospace, console;
+    font-size: 10pt;
+    color: gray;
+    background-color: #650000;
+    /*background-color: darkslategrey;*/
+
+    margin: 5px;
+    padding: 10px;
+    border: groove darkred 5px;
+}
+
+.file {
+    float: left;
+}
+
+.client {
+    float: right;
 }
