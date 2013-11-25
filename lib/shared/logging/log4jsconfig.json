@@ -1,11 +1,12 @@
 {
-    "appenders":[
+    "appenders": [
         {"category":"server","type":"console"},
         {"category":"server","type":"file","filename":"logs/server.log"},
         {"category":"client","type":"console"},
-        {"category":"client","type":"file","filename":"logs/client.log"}],
+        {"category":"client","type":"file","filename":"logs/client.log"}
+    ],
         
-    "levels":{
+    "levels": {
         "server":"ALL",
         "client":"ALL"
     }
