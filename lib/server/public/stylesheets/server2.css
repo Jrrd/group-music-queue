@@ -1,0 +1,150 @@
+
+body {
+    font-family: sans-serif, monospace, console;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    /*min-height: 100%;*/
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    /*min-width: 600px;*/
+    /*max-width: 1200px;*/
+    /*background-color: cornflowerblue;*/
+    text-align: center;
+}
+
+.player {
+    position: absolute;
+    color: whitesmoke;
+    /*width: 100%;*/
+    width: 1000px;
+    min-height: 100px;
+
+    /*padding: 10px 0;*/
+
+    background-color: #000028;
+    /*Grey*/
+    /*background-color: #4e4e4e;*/
+
+    /*Blue*/
+    /*background-color: #2e2b91;*/
+
+    /*Red*/
+    /*background-color: #b00000;*/
+}
+
+.playlist {
+    position: absolute;
+    top: 100px;
+
+    color: whitesmoke;
+    padding: 20px;
+    width: 960px;
+    /*min-height: 300px;*/
+    overflow-y: auto;
+
+
+    /*Dark Grey*/
+    background-color: #141414;
+    /*Blue*/
+    /*background-color: #01001e;*/
+    /*Red*/
+    /*background-color: #380000;*/
+}
+
+.playlist-item {
+    font-size: 10pt;
+    color: gray;
+    margin: 5px;
+    padding: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+
+    /*Blue*/
+    /*background-color: #050065;*/
+    /*border: groove #0c008c 5px;*/
+
+    /*Red*/
+    background-color: #650000;
+    border: groove darkred 5px;
+}
+
+.file {
+    float: left;
+}
+
+.client {
+    float: right;
+}
+
+.audio-info-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    vertical-align: middle;
+    /*border: 1px white solid;*/
+    /*height: 100px;*/
+    /*padding: 10px 0;*/
+}
+
+.cover-art {
+    display: inline;
+    width: 64px;
+    height: 64px;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.audio-info {
+    display: inline-block;
+    color: #1756a3;
+    /*padding: 10px;*/
+    text-align: left;
+    vertical-align: middle;
+}
+
+.audio-metadata-text {
+    color: gray;
+}
+
+.controls-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 7px;
+    border: #1756a3 solid 2px;
+    background-color: #134584;
+    /*background-color: #0000a3;*/
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+}
+
+.controls {
+    position: relative;
+    top: 2px;
+    width: 64px;
+    height: 64px;
+}
+
+/*.controls-inverted {*/
+.controls-clicked {
+    /*-webkit-filter: contrast(100%) brightness(100%) grayscale(0%) saturate(35%) hue-rotate(0deg) sepia(0%)  invert(0%) blur(0px)*/
+    /*-webkit-filter: blur(2px);*/
+    /*-moz-filter: blur(2px);*/
+    -webkit-filter: sepia(35%);
+    -moz-filter: sepia(35%);
+}
+
+.hidden {
+    display: none;
+}

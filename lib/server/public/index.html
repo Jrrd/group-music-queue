@@ -3,21 +3,32 @@
 <head>
     <title>Audio Server - Group Music Queue</title>
 
-    <link type="text/css" rel="stylesheet" href="stylesheets/server.css"/>
+    <link type="text/css" rel="stylesheet" href="stylesheets/server2.css"/>
 
 </head>
 <body>
 <div class="container">
 
     <div id="player" class="player">
-        <span>[ PREVIOUS ]</span>
-        <span>[ PLAY ]</span>
-        <span>[ PAUSE ]</span>
-        <span>[ NEXT ]</span>
+
+        <div class='audio-info-container'>
+
+            <!-- CURRENT FILE METADATA -->
+
+        </div>
+
+        <div class='controls-container'>
+
+            <!-- MEDIA PLAYER CONTROLS -->
+
+        </div>
+
     </div>
 
     <div id="playlist" class="playlist">
+
         <!-- PLAYLIST -->
+
     </div>
 
 </div>
@@ -28,6 +39,31 @@
 <script data-main="scripts/server-ui-bootstrap.js" src="scripts/lib/require.min.js"></script>
 
 <!-- TEMPLATES ============================================== -->
+
+<script id="player-metadata" type="text/template">
+
+    <img class="cover-art" src="images/media_podcast.png" alt="cover art"/>
+    <span id="audio-info" class="audio-info">
+        Song:   <span class="audio-metadata-text" id="song-title"><%- title %></span><br>
+        Artist: <span class="audio-metadata-text" id="song-artist"><%- artist %></span><br>
+        Client: <span class="audio-metadata-text" id="song-source"><%- client %></span><br>
+    </span>
+
+</script>
+
+<script id="player-controls" type="text/template">
+    <!--
+    <a href="javascript:void(0);"><img class='control-skip-backward controls' src="images/controls/media_skip_backward.png" alt="previous"/></a>
+    <a href="javascript:void(0);"><img class='control-play controls hidden' src="images/controls/media_playback_start.png" alt="previous"/></a>
+    <a href="javascript:void(0);"><img class='control-pause controls' src="images/controls/media_playback_pause.png" alt="previous"/></a>
+    <a href="javascript:void(0);"><img class='control-skip-forward controls' src="images/controls/media_skip_forward.png" alt="previous"/></a>
+    -->
+    <img class='control-skip-backward controls' src="images/controls/media_skip_backward.png" alt="previous"/>
+    <img class='control-play controls hidden' src="images/controls/media_playback_start.png" alt="previous"/>
+    <img class='control-pause controls' src="images/controls/media_playback_pause.png" alt="previous"/>
+    <img class='control-skip-forward controls' src="images/controls/media_skip_forward.png" alt="previous"/>
+
+</script>
 
 <script id="empty-list" type="text/template">
 

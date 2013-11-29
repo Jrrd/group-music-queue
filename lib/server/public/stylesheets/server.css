@@ -1,5 +1,6 @@
 
 body {
+    font-family: sans-serif, monospace, console;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -11,34 +12,56 @@ body {
     margin: 0 auto;
     min-width: 600px;
     max-width: 1200px;
-    background-color: cornflowerblue;
+    /*background-color: cornflowerblue;*/
     text-align: center;
 }
 
 .player {
     color: whitesmoke;
-    background-color: #b00000;
     width: 100%;
     min-height: 100px;
+
+    padding: 10px 0;
+
+    /*Grey*/
+    /*background-color: #4e4e4e;*/
+
+    /*Blue*/
+    /*background-color: #2e2b91;*/
+
+    /*Red*/
+    /*background-color: #b00000;*/
 }
 
 .playlist {
     color: whitesmoke;
-    background-color: #380000;
     padding: 20px;
     min-height: 300px;
     overflow-y: auto;
+
+    /*Blue*/
+    /*background-color: #01001e;*/
+    /*Red*/
+    background-color: #380000;
 }
 
 .playlist-item {
-    font-family: sans-serif, monospace, console;
     font-size: 10pt;
     color: gray;
-    background-color: #650000;
-    /*background-color: darkslategrey;*/
-
     margin: 5px;
     padding: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+
+    /*Blue*/
+    /*background-color: #050065;*/
+    /*border: groove #0c008c 5px;*/
+
+    /*Red*/
+    background-color: #650000;
     border: groove darkred 5px;
 }
 
@@ -48,4 +71,25 @@ body {
 
 .client {
     float: right;
+}
+
+.audio-info-container {
+    float: left;
+    padding: 10px 0;
+}
+
+.controls-container {
+    float: right;
+    padding: 10px 0;
+}
+
+
+.audio-info {
+    display: inline-block;
+    padding: 10px;
+}
+
+.controls {
+    width: 64px;
+    height: 64px;
 }
